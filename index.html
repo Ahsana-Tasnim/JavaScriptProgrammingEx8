@@ -1,0 +1,74 @@
+<!--
+    Ahsana Tasnim
+    JavaSciprtProgramming Exercise 8
+    Controls and Events
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controls and Events</title>
+<!-- Add defer to make js to wait for DOM to be completely loaded then we will have access
+    to the eventListeners
+-->
+    <script defer src="app.js"></script>
+    <style>
+        label{
+            /* display: inline-block; */
+            width: 5px;
+            margin: 0 0 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" name="firstName" id="firstNameInput" /><br />
+    <button onclick="clickHandler()">Click Me</button><br />
+    <button id="btnClickMe">Click Me Also</button><br />
+
+    <p id="target-p"></p>
+
+    <p>
+        Checkbox: <input type="checkbox" id="chkMyCheckBox" />
+        <span id="checkboxState"></span>
+    </p>
+   
+    <div>
+        <select id="vehicleMakes">
+            <option>--Make Selection--</option>
+            <option value="10">Jeep</option>
+            <option value="11">Land Rover</option>
+            <option value="12">Toyota</option>
+        </select>
+        <p id="selectedMake"></p>
+    </div>
+
+    <div>
+        <div>
+            <label>User: </label><input type="text" name="userName" id="userNameInput" /><br />
+            <label>Pwd: </label><input type="password" name="password" id="passwordInput" /><br />
+            <lable>Repeat: </lable><input type="password" name="passwordRepeat" id="passwordRepeatInput" />
+            <button id="btnLogin">Login</button>
+            <p id="login"></p>
+        </div>
+
+        <div>
+            <select id="vehicleModels">
+                <option>--Make Selection</option>
+                <option value="1">Wrangler</option>
+                <option value="2">Defender</option>
+                <option value="3">Land Cruiser</option>
+            </select>
+            <p id="selectedModel"></p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
